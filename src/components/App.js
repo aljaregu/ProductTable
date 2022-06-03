@@ -1,8 +1,13 @@
-import './App.css';
+import '../styles/App.css';
+import { SearchBar } from './SearchBar';
+import { ProductTable } from './ProductTable';
 
 function App() {
   return (
-    <div>hola mundo</div>
+    <section className='filterable-product-table'>
+      <SearchBar/>
+      <ProductTable/>
+    </section>
   );
 }
 
